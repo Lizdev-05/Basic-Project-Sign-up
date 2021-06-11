@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <!-------------Font awesome----------------------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+   
+   <!---------Google Font--------------------->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!----------------css------------------->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <Span>Pro Cleaners</Span>
+  <span class="bar">Phone: 1-800-222-3030</span>
+ 
+</nav>
+
+    <Div  class="container">
+
+           <div class="content">
+                      <h1>Vancouver's Best Home Cleaners</h1>
+                      <p>Pro cleaning is Vancouver's best cleaning service. For the quality maid
+                          service Vancouver relies on, book one of our experienced background-checked
+                          professionals to have your home clean in no time.
+                      </p>
+           </div>
+
+
+           <div class="booking" id="book">
+           
+
+             
+                <h3 class="text">Request Info & Booking</h3>
+                <p class="text">Fill this form and we'll contact you as soon as we can.</p>
+    
+                <form action="" onsubmit="processForm()" id="Signup" >
+                           <input type="text" name="FullName" id="FullName"  placeholder="Your Name" required>
+    
+                           <input type="email" name="Email" id="Email" placeholder="Your Email" required>
+    
+                           <input type="tel" name="Telephone" id="Telephone" placeholder="Your Phone" required>
+                           
+                           <input type="submit" value="Request Info & Booking" id="submit" required>
+    
+                </form>
+       
+           </div>
+
+    </Div>
+
+<!--------------Second-Part------------------------>
+<div class="second">
+
+
+ <div class="second-layout">
+     <div class="second-layout-item">
+
+         <div class="layout-icon">
+            <i class="far fa-user"></i>
+         </div>
+         <div class="layout-title">
+            <p>Trusted Professionals</p>
+         </div>
+             <div class="layout-subtitle">
+                <p>Our professionals are experienced, friendly and background-checked</p>
+             </div>
+         </div>
+
+         <div class="second-layout-item">
+
+            <div class="layout-icon">
+                <i class="far fa-calendar-alt"></i>
+            </div>
+            <div class="layout-title">
+                <p>Available Everyday</p>
+            </div>
+                <div class="layout-subtitle">
+                    <p>We're still available to serve you 7 days per week. We'll work around your schedule</p>
+                </div>
+            </div>
+
+            <div class="second-layout-item">
+
+                <div class="layout-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="layout-title">
+                    <p>100% Money Back Guarentee</p>
+                </div>
+                    <div class="layout-subtitle">
+                        <p>If you are not satisfied we'll refund all your money, It's as simple as that</p>
+                    </div>
+                </div>
+      </div>
+    </div>
+
+
+      <!--------------------Third-Part (Client)--------------------------------->
+
+   <div class="client">
+    <h3>What Our Clients Say</h3>
+
+<div class="client-section">
+    <div class="client-details">
+     <img src="man.jpg" alt="One of the client's picture">
+     <p>Paulo Parra</p>
+     <hr>           
+     <p>The team was fast and friendly, honestly my house has not be this clean for years</p>
+
+     <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i> 
+       <i class="fas fa-star"></i>        
+    
+        </div>
+</div>
+
+
+
+    <div class="client-details">
+        <img src="woman.jpg" alt="A woman's picture">
+        <p>Ana Carolina</p>
+        <hr>
+        <p>It feels great to be walking in a fresh, clean apartment everyday. these guys makes my place spotless</p>
+
+  
+
+    <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i> 
+       <i class="fas fa-star"></i>        
+    </div>
+        </div>
+   </div>
+
+</div>
+
+<footer>
+   
+    &#169;Copyright. All rights reserved
+   </footer>
+
+</body>
+<!-------------------------Javascript------------------------------------------->
+
+
+<script>
+
+function processForm(){
+ fullname = document.getElementById('FullName').value
+  email = document.getElementById('Email').value
+  telephone = document.getElementById('Telephone').value
+
+alert(fullname + ', ' + email + ', ' + telephone)
+
+
+
+}
+
+</script>
+</html>
+
+
+
+
+
